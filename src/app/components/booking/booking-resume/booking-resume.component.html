@@ -1,0 +1,13 @@
+<div class="card" *ngIf="bookingInput!=null">
+  <div class="card-header">
+      <p class="card-text">Reserva {{bookingInput.status}}  para {{bookingInput.persons}} personas el día {{bookingInput.date}}</p>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{bookingInput.client}} - {{bookingInput.phone}}</h5>
+    <p class="card-text">Email: {{bookingInput.email}}</p>
+    <p class="card-text">Nº personas: {{bookingInput.persons}}</p>
+    <p class="card-text">Notas del cliente:{{bookingInput.notes}}</p>
+    <a class="btn btn-primary" routerLink="/edit/{{bookingInput.id}}">Modificar reserva</a>
+    <a  class="btn btn-primary" (click)="removeBooking(bookingInput.id)">Borrar Reserva</a>
+  </div>
+</div>

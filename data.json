@@ -1,0 +1,112 @@
+{
+  "bookings": {
+    "1": {
+      "id": 1,
+      "client": "María López",
+      "phone": "+34 623 456 789",
+      "email": "maria.lopez@email.com",
+      "persons": 2,
+      "notes": "Mesa cerca de la ventana",
+      "date": "2024-12-21T14:00:00",
+      "dateCreation": "2024-12-16T08:45:00",
+      "status": "PENDING",
+      "menu": ["Paella", "Tortilla española", "Jamón ibérico"]
+    },
+    "2": {
+      "id": 2,
+      "client": "Carlos García",
+      "phone": "+34 634 567 890",
+      "email": "carlos.garcia@email.com",
+      "persons": 4,
+      "notes": "Cumpleaños, por favor traer pastel",
+      "date": "2024-12-22T20:00:00",
+      "dateCreation": "2024-12-16T10:30:00",
+      "status": "CONFIRM",
+      "menu": ["Gazpacho", "Croquetas", "Churros con chocolate"]
+    },
+    "3": {
+      "id": 3,
+      "client": "Laura Martínez",
+      "phone": "+34 645 678 901",
+      "email": "laura.martinez@email.com",
+      "persons": 1,
+      "notes": "Mesa tranquila para leer",
+      "date": "2024-12-23T18:00:00",
+      "dateCreation": "2024-12-17T11:00:00",
+      "status": "PENDING",
+      "menu": ["Pisto manchego", "Patatas bravas", "Flan casero"]
+    },
+    "4": {
+      "id": 4,
+      "client": "Antonio Rodríguez",
+      "phone": "+34 656 789 012",
+      "email": "antonio.rodriguez@email.com",
+      "persons": 5,
+      "notes": "Evento de empresa, necesita proyector",
+      "date": "2024-12-24T09:00:00",
+      "dateCreation": "2024-12-18T14:30:00",
+      "status": "CONFIRM",
+      "menu": ["Cocido madrileño", "Queso manchego", "Tarta de Santiago"]
+    },
+    "5": {
+      "id": 5,
+      "client": "Sofía Sánchez",
+      "phone": "+34 667 890 123",
+      "email": "sofia.sanchez@email.com",
+      "persons": 6,
+      "notes": "Aniversario, mesa privada",
+      "date": "2024-12-25T21:00:00",
+      "dateCreation": "2024-12-19T15:15:00",
+      "status": "PENDING",
+      "menu": ["Fabada asturiana", "Pulpo a la gallega", "Crema catalana"]
+    },
+    "6": {
+      "id": 6,
+      "client": "Luis Gómez",
+      "phone": "+34 678 901 234",
+      "email": "luis.gomez@email.com",
+      "persons": 3,
+      "notes": "Comida rápida, sin gluten",
+      "date": "2024-12-26T13:00:00",
+      "dateCreation": "2024-12-20T16:00:00",
+      "status": "CONFIRM",
+      "menu": ["Arroz negro", "Calamares a la romana", "Tarta de queso"]
+    },
+    "7": {
+      "id": 7,
+      "client": "Pablo Fernández",
+      "phone": "+34 689 012 345",
+      "email": "pablo.fernandez@email.com",
+      "persons": 4,
+      "notes": "Mesa en el patio",
+      "date": "2024-12-27T15:00:00",
+      "dateCreation": "2024-12-21T09:00:00",
+      "status": "PENDING",
+      "menu": ["Empanada gallega", "Huevos rotos", "Torrijas"]
+    },
+    "8": {
+      "id": 8,
+      "client": "Marta Ruiz",
+      "phone": "+34 690 123 456",
+      "email": "marta.ruiz@email.com",
+      "persons": 2,
+      "notes": "Mesa para dos personas, sin bebidas alcohólicas",
+      "date": "2024-12-28T12:30:00",
+      "dateCreation": "2024-12-22T17:45:00",
+      "status": "CONFIRM",
+      "menu": ["Caldo gallego", "Boquerones en vinagre", "Leche frita"]
+    },
+    "9": {
+      "id": 9,
+      "client": "José Hernández",
+      "phone": "+34 701 234 567",
+      "email": "jose.hernandez@email.com",
+      "persons": 7,
+      "notes": "Reunión familiar, por favor reservar espacio amplio",
+      "date": "2024-12-29T19:00:00",
+      "dateCreation": "2024-12-23T20:00:00",
+      "status": "PENDING",
+      "menu": ["Callos a la madrileña", "Pa amb tomàquet", "Brazo de gitano"]
+    }
+  }
+}

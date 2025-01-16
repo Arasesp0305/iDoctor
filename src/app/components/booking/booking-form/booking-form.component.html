@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="alert alert-danger" role="alert" *ngIf="errors !=null">
+                {{errors}}
+              </div>
+            <form [formGroup]="bookingForm" (submit)="saveChanges()">
+                <input type="text" hidden class="form-control" id="id">
+                <div class="form-group">
+                    <label for="client">Nombre del cliente:</label>
+                    <input  formControlName="client" type="text" class="form-control" id="client" [ngClass]="{'is-valid': this.bookingForm.get('client')?.valid && this.bookingForm.get('client')?.touched,'is-invalid':this.bookingForm.get('client')?.invalid && this.bookingForm.get('client')?.touched}">
+                    <div class="invalid-feedback">
+                        <small>Debe indicar el nombre del cliente.</small> <br>
+                        <small>El nombre del cliente no puede estar vacío</small> <br>
+                        <small>El nombre del cliente no puede tener más de 50 caracteres</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Número de Teléfono:</label>
+                    <input  formControlName="phone" type="text" class="form-control " id="phone" [ngClass]="{'is-valid': this.bookingForm.get('phone')?.valid && this.bookingForm.get('phone')?.touched,'is-invalid':this.bookingForm.get('phone')?.invalid && this.bookingForm.get('phone')?.touched}">
+                    <div  class="invalid-feedback">
+                        <small>Debe indicar un número de teléfono.</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input formControlName="email" type="email" class="form-control" id="email" [ngClass]="{'is-valid': this.bookingForm.get('email')?.valid && this.bookingForm.get('email')?.touched,'is-invalid':this.bookingForm.get('email')?.invalid && this.bookingForm.get('email')?.touched}">
+                    <div  class="invalid-feedback">
+                        <small>Debe indicar un email.</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="persons">Número de comensales:</label>
+                    <input formControlName="persons" type="number" class="form-control" id="persons" [ngClass]="{'is-valid': this.bookingForm.get('persons')?.valid && this.bookingForm.get('persons')?.touched,'is-invalid':this.bookingForm.get('persons')?.invalid && this.bookingForm.get('persons')?.touched}">
+                    <div  class="invalid-feedback">
+                        <small>El número de comensales debe ser mayor que 0.</small> <br>
+                        <small>El número de comensales debe ser menor que 50.</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="notes">Nota:</label>
+                    <input formControlName="notes" type="textarea" row="1" class="form-control" id="notes" [ngClass]="{'is-valid': this.bookingForm.get('notes')?.valid && this.bookingForm.get('notes')?.touched,'is-invalid':this.bookingForm.get('notes')?.invalid && this.bookingForm.get('notes')?.touched}">
+                    <div  class="invalid-feedback">
+                        <small>La longitud de la nota no puede superar los 240 caracteres.</small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="date">Fecha reserva:</label>
+                    <input formControlName="date" type="datetime-local" row="1" class="form-control" id="date" [ngClass]="{'is-valid': this.bookingForm.get('date')?.valid && this.bookingForm.get('date')?.touched,'is-invalid':this.bookingForm.get('date')?.invalid && this.bookingForm.get('date')?.touched}">
+                    <div  class="invalid-feedback">
+                        <small>Debe indicar una fecha para la reserva.</small>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+</div>
